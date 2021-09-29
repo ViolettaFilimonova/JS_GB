@@ -120,4 +120,5 @@ alert( null >= 0 ); // (3) true
         return val * power(val, pow - 1)
     }
 }
+
 console.log(power(2, 2));*/
