@@ -9,7 +9,7 @@ console.log(b);                    // 3 счетчик 1+1+1*/
 
 /*2. Чему будет равен x в примере ниже?
 var a = 2;
-var x = 1 + (a *= 2);//4*/
+var x = 1 + (a *= 2);//5*/
 
 /*3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем написать скрипт, который работает по следующему принципу:
 если a и b положительные, вывести их разность;
@@ -91,15 +91,17 @@ function division(arg1, arg2) {
 /*function mathOperation(arg1, arg2, operation) {
     switch (operation) {
         case 'sum':
-            return arg1 + arg2;
+            return sum(arg1, arg2);
         case 'subtraction':
-            return arg1 - arg2;
+            return subtraction(arg1, arg2);
         case 'division':
-            return arg1 / arg2;
+            return division(arg1, arg2);
         case 'multiplication':
-            return arg1 * arg2;
+            return multiplication(arg1, arg2);
     }
 }
+
+
 console.log(mathOperation(1, 2, 'multiplication'));*/
 
 /*7. *Сравнить null и 0. Попробуйте объяснить результат.
