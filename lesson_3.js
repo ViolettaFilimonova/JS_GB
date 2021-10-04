@@ -1,3 +1,38 @@
+/*var str = 'Hello, '
+str += 'world!'
+console.log(str)*/
+
+/*var list = '<ul>', i = 1;
+while (i <= 10) {
+    list += '<li>Элемент ' + i + '</li>';
+    i++;
+}
+list += '</ul>';
+document.write(list);*/
+
+/*var table = '<table border = "1" width = "800">';
+var tr = 1;// счетчик строк
+while (tr <= 100) {
+    table += '<tr>';
+    var td = 1;//счетчик столбцов
+    while (td <= 10) {
+        if (td % 2 == 0) {
+            var style = 'color:red';
+        } else {
+            var style = 'color:blue';
+        }
+        var x = tr * td;
+        table += '<td style = "' + style + '">' + x + '</td>';
+        td++;
+    }
+    table += '</tr>';
+    tr++;
+}
+table += '</table>';
+document.write(table);*/
+
+
+
 /*1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100*/
 /*let arr = [];
 let num = 1;
