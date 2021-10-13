@@ -30,7 +30,7 @@
 // Игра быки и коровы
 var number = [];//4 цыфры числа помещаем в массив
 var attems = 0; // число попыток
-
+guessNumber();
 function generateNumber(){
     var min = 1, max = 9;//максимальное и минимальное число 
     for (let i = 0; i < 4; i++){//заполняем числами массив
@@ -54,6 +54,15 @@ function guessNumber(){
     }//проверяем числа
     else{
         var answer = checkNumber(result);
+        if(answer[0] == true){
+            //число угадано
+            alert('Поздравляю! Вы угадали число. Кол-во попыток' + attems);
+            //останавлиаем игру
+            gameIsRunning = false;
+        }else{
+            //следующий ход
+            result = prompt('Быки: ' + answer[1] + ' Коровы: ' + answer[2] + ' Введите число (-1 -закончить игру)');
+        }
     }
 
     }
@@ -68,4 +77,20 @@ function checkNumber(myresult){
     var answer = [false, 0, 0];
     console.log(myresult);
     console.log(number);
+}
+
+for(let i = 0; i < myresult.lenght; i++){
+    if(number[i] == parseInt(myresult[i])){// если число совпадает по индексу то это бык
+        answer[1]++;
+    }else if(number.indexOf(parseInt(myresult[i])!=1)){//если число есть в массиве то это корова
+        answer[2]++;
+    }else{
+
+    }
+
+
+    if (answer[i] == 4){
+        answer[0] = true;
+        }
+    return answer;
 }
