@@ -517,26 +517,77 @@
 
 //                              SLIDER START
 
-var offset = 0; //движение влево
-var sliderItems = document.querySelector('.slider__items');
+// var offset = 0; //движение влево
+// var sliderItems = document.querySelector('.slider__items');
 
-document.querySelector('.slider_next').addEventListener('click', function() {
-   offset += 300 ;
-   if (offset > 1200) {
-       offset = 0
-   }
-   sliderItems.style.left = -offset + 'px';
-})
+// document.querySelector('.slider_next').addEventListener('click', function() {
+//    offset += 300 ;
+//    if (offset > 1200) {
+//        offset = 0
+//    }
+//    sliderItems.style.left = -offset + 'px';
+// })
 
-document.querySelector('.slider_prev').addEventListener('click', function() {
-    offset -= 300 ;
-    if (offset < 0 ) {
-        offset = 1200
-    }
-    sliderItems.style.left = -offset + 'px';
- })
+// document.querySelector('.slider_prev').addEventListener('click', function() {
+//     offset -= 300 ;
+//     if (offset < 0 ) {
+//         offset = 1200
+//     }
+//     sliderItems.style.left = -offset + 'px';
+//  })
+
+// const images = document.querySelectorAll('.slider .slider__item img')
+// const sliderItem = document.querySelector('.slider__item')
+// let count = 0
+// let width;
+
+// function f() {
+//     console.log('resize')
+//     width = document.querySelector('.slider').offsetWidth;
+//     sliderItem.style.width = width * images.length + 'px' 
+//     images.forEach(item => {
+//         item.style.width = width + 'px'
+//         item.style.height = 'auto'
+//     })
+// }
+// window.addEventListener('resize', f)
+// f();
+
+// document.querySelector('.slider_next').addEventListener('click', function() {
+//     count++
+//     rollSlider();
+// });
+
+// function rollSlider() {
+//     sliderItem.style.transform = 'translate(-' + count * width + 'px)'
+// }
 
 
 
+ /* конфигурация */
+//  let width = 130; // ширина картинки
+//  let count = 3; // видимое количество изображений
 
+//  let list = document.querySelector('ul');
+//  let listElems = document.querySelectorAll('li');
+
+//  let position = 0; // положение ленты прокрутки
+
+//  document.querySelector('.prev').onclick = function() {
+//    // сдвиг влево
+//    position += width * count;
+//    // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+//    position = Math.min(position, 0)
+//    list.style.marginLeft = position + 'px';
+//  };
+
+//  document.querySelector('.next').onclick = function() {
+//    // сдвиг вправо
+//    position -= width * count;
+//    // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+//    position = Math.max(position, -width * (listElems.length - count));
+//    list.style.marginLeft = position + 'px';
+//  };
 //                              SLIDER END
+
+

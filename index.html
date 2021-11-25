@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,9 +43,9 @@
         transform: rotate(180deg);
        
     } */
-    img{
+    /* img{
         width: 250px;
-    }   
+    }    */
 
 
 </style>
@@ -69,63 +69,146 @@
 
 <!--                     SLIDER START              -->
 <style>
-    img{
-        width: 300px;
-        height: 300px;
-    }
-    .wrapper{
-        max-width: 1200px;
+  /* * {
+        box-sizing: border-box;
+    } */
+
+    /* .wrapper{
         margin: 0 auto;
-        position: relative;
+        width: 600px;
     }
-    .slider{
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
+    .slider-container{
         overflow: hidden;
-        
+        background-color: plum;
     }
-    .slider__items{
+    .slider-track{
         display: flex;
-        left: 0;
-        transition:all ease 1s;
-        
+        background-color: powderblue;
+        transition: .2s;
     }
-    .slider_prev {
-        
+    .slider-buttons{
+      text-align: center;
     }
-    .slider_next{
-        margin-left: 342px;
+    .slider-item{
+        height: 100px;
     }
-    .buttons{
-        position: absolute;
-        top: 39%;
-        left: 32%;
-        
+    .slider-item:nth-child(3n+1){
+        background-color: purple;
     }
+    .slider-item:nth-child(3n+2){
+        background-color: salmon;
+    }
+    .slider-item:nth-child(3n+3){
+        background-color: yellow;
+    } */
+
+    body {
+  padding: 10px;
+}
+
+.carousel {
+  position: relative;
+  width: 398px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+}
+
+.carousel img {
+  width: 130px;
+  height: 130px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 390px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
 </style>
-<div class="wrapper">
-    <div class="slider">
-        <div class="slider__items">
-            
-                <img src="/0.jpg"  alt="pcture">
-          
-                <img src="/2.jpg"   alt="pcture">
-
-                <img src="/3.jpg"   alt="pcture">
-
-                <img src="/4.jpg"   alt="pcture">
-
-                <img src="/5.jpg"   alt="pcture">
-          
+<!-- <div class="wrapper">
+    <div class="slider-container">
+        <div class="slider-track">
+            <div class="slider-item">1</div>
+            <div class="slider-item">2</div>
+            <div class="slider-item">3</div>
+            <div class="slider-item">4</div>
+            <div class="slider-item">5</div>
         </div>
     </div>
-    <div class="buttons">
-        <button class="slider_prev ">Prev</button>
-        <button class="slider_next">Next</button>
+    <div class="slider-buttons">
+        <button class="btn-prev">Prev</button>
+        <button class="btn-next">Next</button>
     </div>
-</div>
+</div>-->
 
+
+
+<div id="carousel" class="carousel">
+    <button class="arrow prev">⇦</button>
+    <div class="gallery">
+      <ul>
+        <li><img src="https://ru.js.cx/carousel/1.png"></li>
+        <li><img src="https://ru.js.cx/carousel/2.png"></li>
+        <li><img src="https://ru.js.cx/carousel/3.png"></li>
+        <li><img src="https://ru.js.cx/carousel/4.png"></li>
+        <li><img src="https://ru.js.cx/carousel/5.png"></li>
+        <li><img src="https://ru.js.cx/carousel/6.png"></li>
+        <li><img src="https://ru.js.cx/carousel/7.png"></li>
+        <li><img src="https://ru.js.cx/carousel/8.png"></li>
+        <li><img src="https://ru.js.cx/carousel/9.png"></li>
+        <li><img src="https://ru.js.cx/carousel/10.png"></li>
+      </ul>
+    </div>
+    <button class="arrow next">⇨</button>
+  </div>
 
 <!--                     SLIDER END                -->
 
@@ -181,6 +264,7 @@
     <script src="./repeate_text.js"></script>
     <script src="./repeate.js"></script>
     
+   
 </body>
 
-</html>
+</html> 
