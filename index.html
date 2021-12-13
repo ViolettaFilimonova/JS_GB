@@ -102,7 +102,7 @@
         background-color: yellow;
     } */
 
-    body {
+    /* body {
   padding: 10px;
 }
 
@@ -117,9 +117,9 @@
 
 .carousel img {
   width: 130px;
-  height: 130px;
+  height: 130px; */
   /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
-  display: block;
+  /* display: block;
 }
 
 .arrow {
@@ -133,9 +133,9 @@
   line-height: 24px;
   color: #444;
   display: block;
-}
+} */
 
-.arrow:focus {
+/* .arrow:focus {
   outline: none;
 }
 
@@ -159,19 +159,19 @@
 
 .gallery ul {
   height: 130px;
-  width: 9999px;
-  margin: 0;
+  width: 9999px; */
+  /* margin: 0;
   padding: 0;
   list-style: none;
-  transition: margin-left 250ms;
+  transition: margin-left 250ms; */
   /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
   /* http://davidwalsh.name/remove-whitespace-inline-block */
-  font-size: 0;
+  /* font-size: 0;
 }
 
-.gallery li {
-  display: inline-block;
-}
+.gallery li { */
+  /* display: inline-block;
+} */
 </style>
 <!-- <div class="wrapper">
     <div class="slider-container">
@@ -191,7 +191,7 @@
 
 
 
-<div id="carousel" class="carousel">
+<!-- <div id="carousel" class="carousel">
     <button class="arrow prev">⇦</button>
     <div class="gallery">
       <ul>
@@ -208,7 +208,7 @@
       </ul>
     </div>
     <button class="arrow next">⇨</button>
-  </div>
+  </div> -->
 
 <!--                     SLIDER END                -->
 
@@ -261,9 +261,90 @@
     <script src="./homeW.js"></script> -->
     <!-- <script src="/developments.js"></script> -->
     <!-- <script src="/anonymous_function.js"></script> -->
-    <script src="./repeate_text.js"></script>
-    <script src="./repeate.js"></script>
-    
+    <!-- <script src="./repeate_text.js"></script>
+    <script src="./repeate.js"></script> -->
+
+    <!-- <div class="wrapper">
+      <div class="title">
+        <h2>Косметика</h2>
+        <div class="list">
+          <div class="list-item">
+            <p>Блеск для губ</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Пудра</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Тушь для ресниц</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Тональный крем</p>
+            <span></span>
+            <buttonclass="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Румяна</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Бронзер</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Помада</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Карандаш для губ</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+          <div class="list-item">
+            <p>Накладные ресницы</p>
+            <span></span>
+            <button class="btn">В карзину</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="title">
+        <h2>Карзина</h2>
+        <div class="text">
+          <p>Сумма покупки:</p>
+        </div>
+        <span>0</span>
+      </div>
+    </div> -->
+
+
+    <div class="item_box">
+      <h3 class="item_title">Samsung Galaxy S10</h3>
+      <p>Цена: <span class="item_price">20</span>$</p>
+      <button class="add_item" data-id="7">Добавить в корзину</button>
+    </div>
+    <div class="item_box">
+      <h3 class="item_title">LG Optimus G E100500</h3>
+      <p>Цена: <span class="item_price">100</span>$</p>
+      <button class="add_item" data-id="2">Добавить в корзину</button>
+    </div>
+      <div class="item_box">
+      <h3 class="item_title">Nokia 2110</h3>
+      <p>Цена: <span class="item_price">1000</span>$</p>
+      <button class="add_item" data-id="5">Добавить в корзину</button>
+    </div>
+    <button id="checkout">Оформить заказ</button>
+    <button id="clear_cart">Очистить корзину</button>
+    <div id="cart_content"></div>
+    <script src="/basket.js"></script>
    
 </body>
 
